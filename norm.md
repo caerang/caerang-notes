@@ -23,7 +23,7 @@ $$
 L_p=\left(\sum_i^n|x_i|^p\right)^\frac{1}{p}
 $$
 
-* $$ p $$ 는 Norm의 차수
+* $ p $ 는 Norm의 차수
 * p가 1이면 L1 Norm
 * p가 2이면 L2 Norm
 
