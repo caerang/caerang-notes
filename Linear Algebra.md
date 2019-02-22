@@ -114,9 +114,40 @@ $$
 
 예를 들어 $\mathcal{V}_1=5\mathcal{V}_2 + 7\mathcal{V}_3$ 이라면 $\mathcal{V}_1, \mathcal{V}_2, \mathcal{V}_3$ 은 선형 독립이 아니다. 왜냐하면 $\mathcal{V}_1$이 $\mathcal{V}_2$와 $\mathcal{V}_3$의 덧셈으로 표현 가능하기 때문이다.
 
-일반적으로 $n$ 개의 벡터로 이루어진 집합($\mathcal{V}_1,\mathcal{V}_2,\mathcal{V}_3,\cdots , \mathcal{V}_n \in \mathbb{R}^{m \times 1}$)은 $a_1\mathcal{V}_1 + a_2\mathcal{V}_2 + a_3\mathcal{V}_3 + \cdots + a_n\mathcal{V}_n=0 이고 a_i=0 \quad \forall i \in \{1,2,\cdots n\}$를 만족하는 경우만 선형 독립이라고 말한다.
+일반적으로 $n​$ 개의 벡터로 이루어진 집합($\mathcal{V}_1,\mathcal{V}_2,\mathcal{V}_3,\cdots , \mathcal{V}_n \in \mathbb{R}^{m \times 1}​$)은 $a_1\mathcal{V}_1 + a_2\mathcal{V}_2 + a_3\mathcal{V}_3 + \cdots + a_n\mathcal{V}_n=0 이고 a_i=0 \quad \forall i \in \{1,2,\cdots n\}​$를 만족하는 경우만 선형 독립이라고 말한다.
 
-[ 내용 추가 정리 필요, 선형 독립과 확장의 관계]
+$a_1\mathcal{V}_1 + a_2\mathcal{V}_2 + a_3\mathcal{V}_3 + \cdots + a_n\mathcal{V}_n=0$ 이고 모든 $a_i=0$ 아니면 벡터는 선형 독립이 아니다.
+
+아래 방법을 사용하면 주어진 벡터 집합이 선형 독립인지 아닌지 확인할 수 있다.
+
+$a_1\mathcal{V}_1 + a_2\mathcal{V}_2 + a_3\mathcal{V}_3 + \cdots + a_n\mathcal{V}_n=0$는 아래와 같이 식을 다시 정리할 수 있다.
+$$
+[\mathcal{V}_1\ \mathcal{V}_2\ \mathcal{V}_3\ \cdots\ \mathcal{V}_n]
+\begin{bmatrix}
+a_1\\
+a_2\\
+\vdots \\
+a_n
+\end{bmatrix} = 0 \qquad
+where \mathcal{V}_i \in \mathbb{R}^{m \times 1},
+\qquad
+\forall i \in \{1,2,\cdots , n\},
+\begin{bmatrix}
+a_1 \\
+a_2 \\
+\vdots \\
+a_n
+\end{bmatrix} \in \mathbb{R}^{n \times 1}
+$$
+위 식을 만족하는 유일한 해가 영벡터라면 벡터 집합($\{v_1, v_2, \cdots , v_n\}$)은 '선형 독립이다'라고 말한다.
+
+만약 $n$ 벡터 집합이 선형 독립이라면 그런 벡터는 전체 n 차원 공간을 생성(span)한다. 즉, n 개의 벡터로 선형 조합을 하면 n 차원 공간에서 있는 모든 벡터를 생성할 수 있다는 것을 의미한다. 만약 n 개의 벡터가 선형 독립이 아니면 n 차원의 부분 공간만 생성한다.
+
+![벡터 생성(span)](images/vector space span.png)
+
+*벡터 생성(span)*
+
+[ 그림 상세 설명 예제 추가]
 
 
 
