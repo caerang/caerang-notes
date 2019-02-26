@@ -1,12 +1,14 @@
-# Introduction
+# Unsupervised Learning of Sentence Embeddings using Compositional n-Gram Features
 
-# Model
+## Introduction
+
+## Model
 
 $$
 \min_{U,V} \sum_{S \in C}f_S(UV_{\iota S})
 $$
 
-* $ U \in \R^{k \times h} ​$ , $ V \in \R^{h \times |V|}​$, V 는 단어 사전, U의 컬럼은 target word vector, V 컬럼은 learnt source word vector
+* $ U \in \R^{k \times h} $ , $ V \in \R^{h \times |V|}$, V 는 단어 사전, U의 컬럼은 target word vector, V 컬럼은 learnt source word vector
 * S 는 임의의 크기를 갖음(당연, 문장의 길이는 다양하니까...)
 * indicator vector $\iota S \in \{0, 1\} ^{|\mathcal{V}|}$ is binary vector encoding S (bag of words encoding)
 * C-BOW나 GloVe에서와 같이 고정 크기의 context windows사용해서 단어 임베딩
@@ -14,7 +16,7 @@ $$
 * 문장 임베딩에서 S는 전체 문장 또는 문서(가변 길이)
 * 이런 속성은 FastText 분류기에도 동일한 속성을 공유
 
-## Proposed Unsupervised Model
+### Proposed Unsupervised Model
 
 * 단어 사전 $ w $의 각 단어에 대해 source (or context) 임베딩 $ v_w $과 대상 임베딩 $ u_w $ 를 학습
 
@@ -50,10 +52,10 @@ $$
   \min_{U,V} \sum_{S \in C} \sum_{w_t \in S} \left(q_{p}(w_t)l(u^T_{w_t}v_{S_{w_t}}) + |N_{w_{t}}|\sum_{w^{'} \in N_{w_t}} q_n(w^{'})l(-u^{T}_{w^{'}}v_{S_{w_t}}) \right)
   $$
 
-## Computational Efficiency
+### Computational Efficiency
 
 * 학습과 추론에 낮은 계산 비용이 드는 것이 장점
-* 주어진 문장 S와 학습된 모델에 대해 문장 표현 $ v_S $의 계산에는 $ |S| \cdot h $ 의 부동소숫점 연산량
+* 주어진 문장 $S$와 학습된 모델에 대해 문장 표현 $ v_S $의 계산에는 $ |S| \cdot h $ 의 부동소숫점 연산량
 
 * 위 수식에 대해 학습하는 경우도 동일한 연산량만 필요
 * 모델이 단순해서 훈련과정에 병렬 처리가 가능함
@@ -63,7 +65,7 @@ $$
 
 ## Model Training
 
-# Related Work
+## Related Work
 
 ## Unsupervised Models Independent of Sentence Ordering
 
