@@ -36,3 +36,11 @@ $f(x,y) = P(X \le x, Y \le y)$
 * 확률을 수학적인 방식으로 서술한 공간
 * 전체 집합의 측도가 1인 공간
 
+
+
+## Reference
+
+* [Formal Modeling in Cognitive Science](http://www.inf.ed.ac.uk/teaching/courses/cfcs1/lectures/joint.pdf)
+* [확률 분포 함수와 확률 밀도 함수의 의미](https://datascienceschool.net/view-notebook/4d74d1b5651245a7903583f30ae44608)
+* [다변수 연속 확률 변수](https://datascienceschool.net/view-notebook/e08074f293144eeca9cc7251b5d5666c/)
+* 
