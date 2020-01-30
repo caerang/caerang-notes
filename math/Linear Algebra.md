@@ -110,7 +110,7 @@ x_n
 \end{bmatrix}
 = x_1c^{(1)} + x_2c^{(2)} + \cdots x_nc^{(n)}
 $$
-컬럼벡터와 행렬의 선형 조합이고 벡터 $x​$ 의 요소는 선형 계수이다.
+컬럼벡터와 행렬의 선형 조합이고 벡터 $x$ 의 요소는 선형 계수이다.
 
 행렬의 곱셈으로 생성된 새로운 백터는 행렬 A 의 컬럼 백터와 동일한 차원을 갖는다. 즉 우리가 얼마나 많은 컬럼 백터를 조합하는지와 상관 없이 컬럼 벡터에 의해 확장된(spanned) 공간을 떠날 수 없다.
 
@@ -122,7 +122,7 @@ $$
 
 예를 들어 $\mathcal{V}_1=5\mathcal{V}_2 + 7\mathcal{V}_3$ 이라면 $\mathcal{V}_1, \mathcal{V}_2, \mathcal{V}_3$ 은 선형 독립이 아니다. 왜냐하면 $\mathcal{V}_1$이 $\mathcal{V}_2$와 $\mathcal{V}_3$의 덧셈으로 표현 가능하기 때문이다.
 
-일반적으로 $n​$ 개의 벡터로 이루어진 집합($\mathcal{V}_1,\mathcal{V}_2,\mathcal{V}_3,\cdots , \mathcal{V}_n \in \mathbb{R}^{m \times 1}​$)은 $a_1\mathcal{V}_1 + a_2\mathcal{V}_2 + a_3\mathcal{V}_3 + \cdots + a_n\mathcal{V}_n=0 이고 a_i=0 \quad \forall i \in \{1,2,\cdots n\}​$를 만족하는 경우만 선형 독립이라고 말한다.
+일반적으로 $n$ 개의 벡터로 이루어진 집합($\mathcal{V}_1,\mathcal{V}_2,\mathcal{V}_3,\cdots , \mathcal{V}_n \in \mathbb{R}^{m \times 1}$)은 $a_1\mathcal{V}_1 + a_2\mathcal{V}_2 + a_3\mathcal{V}_3 + \cdots + a_n\mathcal{V}_n=0 이고 a_i=0 \quad \forall i \in \{1,2,\cdots n\}$를 만족하는 경우만 선형 독립이라고 말한다.
 
 $a_1\mathcal{V}_1 + a_2\mathcal{V}_2 + a_3\mathcal{V}_3 + \cdots + a_n\mathcal{V}_n=0$ 이고 모든 $a_i=0$ 아니면 벡터는 선형 독립이 아니다.
 
@@ -149,9 +149,9 @@ a_n
 $$
 위 식을 만족하는 유일한 해가 영벡터라면 벡터 집합($\{v_1, v_2, \cdots , v_n\}$)은 '선형 독립이다'라고 말한다.
 
-만약 $n​$ 벡터 집합이 선형 독립이라면 그런 벡터는 전체 n 차원 공간을 생성(span)한다. 즉, n 개의 벡터로 선형 조합을 하면 n 차원 공간에서 있는 모든 벡터를 생성할 수 있다는 것을 의미한다. 만약 n 개의 벡터가 선형 독립이 아니면 n 차원의 부분 공간만 생성한다.
+만약 $n$ 벡터 집합이 선형 독립이라면 그런 벡터는 전체 n 차원 공간을 생성(span)한다. 즉, n 개의 벡터로 선형 조합을 하면 n 차원 공간에서 있는 모든 벡터를 생성할 수 있다는 것을 의미한다. 만약 n 개의 벡터가 선형 독립이 아니면 n 차원의 부분 공간만 생성한다.
 
-![벡터 생성(span)](../images/vector-space-span.png)
+![벡터 생성(span)](../figures/vector-space-span.png)
 
 *벡터 생성(span)*
 
@@ -225,7 +225,7 @@ $$
 
 행렬식의 절대값은 경계선처럼 동작하는 행벡터로 둘러 쌓인 볼륨을 결정한다.
 
-![행렬식의 물리적인 의미](../images/parallelogram.png)
+![행렬식의 물리적인 의미](../figures/parallelogram.png)
 
 *행렬식의 물리적인 의미*
 

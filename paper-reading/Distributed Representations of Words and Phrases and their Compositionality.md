@@ -7,7 +7,7 @@
 * 방대한 양의 unstructured text data로 부터 고품질(?)의 백터 표현(vector representation)을 학습하기 위한 효률적인 방법이 소개됐다.(skip-gram model)
 * skip-gram 모델은 이전의 방법과 다르게 언어를 백터 공간으로 변환하는 과정에서 dense matrix multiplication이 필요하지 않다. 이로인해 학습을 효과적으로 할 수 있다. 최적화된 단일 머신에서 1000억 단어를 하루에 학습할 수 있다.
 
-![Skip-gram](/home/creative/study/notes/images/skip-gram.png)
+![Skip-gram](../figures/skip-gram.png)
 
 *Skip-gram 모델의 학습 목적은 단어들 사이에 주변 단어를 예측할 수 있는 백터 표현을 배우는 것이다.*
 
@@ -60,9 +60,10 @@
   \log \sigma(v_{w_O}^{'T}v_{w_I}) + \sum_{i=1}^{k}\mathbb{E}_{w_i} \sim P_n(w) \left[\log \sigma(-v_{w_i}^{'T}v_{w_I}) \right]
   $$
 
-* Skip-gram 목적 함수에서 $\log P(w_O|w_I)$ 를 ​$(3)$을 사용해서 대체한다.
+* Skip-gram 목적 함수에서 $\log P(w_O|w_I)$ 를 $(3)$을 사용해서 대체한다.
 * 그러면 작업은 로지스틱 회귀를 통해 노이즈 분포 $P_n(w)$ 에서 $w_O$를 구분하는 문제가 된다.
-  * 데이터 샘플에는 $k​$ 개의 negative sample이 있다
+  
+  * 데이터 샘플에는 $k$ 개의 negative sample이 있다
 
 ## Subsampling of Frequent Words
 
